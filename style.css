@@ -1,0 +1,378 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+header{
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+header>div{
+    height: 100%;
+}
+header .logo{
+    width: 7%;
+    height: 100%;
+    position: relative;
+}
+header .logo .image-box {
+    height: 80% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+header .logo img{
+    width: 80%;
+    height: 80%;
+}
+header .location{
+    position: relative;
+    width: 10%;
+}
+header .location .location-box{
+    width: 100%;
+    font-size: 1.2rem;
+    height: 50% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+header .empty{
+    width: 33%;
+}
+header .list{
+    width: 50%;
+    height: 100%;
+}
+header .list ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    line-height: 2;
+    justify-content: flex-end;
+}
+header .list ul li{
+    padding: 0 15px;
+    line-height: 3.5;
+    font-weight: 900;
+}
+header .list ul li:last-child a{
+    background: #f55;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+header .list ul li:last-child a:hover{
+    background:#f22;
+}
+header .list ul li a{
+    cursor: pointer;
+}
+header .list ul li a span{
+    cursor: pointer;
+}
+main .layout{
+    display: flex;
+}
+main .layout aside{
+    width: 30%;
+}
+main .layout aside .list{
+    box-sizing: border-box;
+    padding: 10% 10% 2% 10%;
+}
+main .layout aside .list ul {
+    list-style-type: none;
+}
+main .layout aside .list ul li{
+    margin: 10px 0;
+}
+main .layout aside .list ul li a{
+    color: #000;
+}
+
+main .layout aside hr{
+    width: 80%;
+    margin: 0 auto;
+}
+main .layout aside .first-hr{
+    border-top: 2px solid #ccc;
+}
+main .layout aside .toggle{
+    display: flex;
+    padding: 2% 10% 2% 10%;
+}
+main .layout aside .toggle>div{
+    width: 50%;
+}
+main .layout aside .toggle .title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+main .layout aside .toggle .btn-toggle{
+    text-align: left;
+}
+main .layout aside .dropdown{
+    padding: 2% 10% 2% 10%;
+    font-size: 1.2rem;
+}
+main .layout aside .dropdown .text{
+    margin-right: 5px;
+}
+
+
+
+
+/* html css w3schools toggle button*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #f55;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #f55;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+main .layout>.left{
+    width: 70%;
+    padding: 2% 2% 0 3%;
+}
+main .layout .left .top-ads .search-box .box{
+    width: 60%;
+    border: 1px solid #ccc;
+    display: flex;
+}
+main .layout .left .top-ads .search-box .box .right{
+    width: 30%;
+    text-align: center;
+    line-height: 2.5;
+    background: #ccc;
+    cursor: pointer;
+}
+main .layout .left .top-ads .search-box .box .left{
+    width: 70%;
+}
+main .layout .left .top-ads .search-box .box .left input{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px 0 0 ;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+main .layout .left .top-ads .list {
+    width: 80%;
+}
+main .layout .left .top-ads .list ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 3%;
+}
+main .layout .left .top-ads .list ul li{
+    margin: 5px 5px;
+    padding: 0 5px;
+}
+main .layout .left .top-ads .list ul li a{
+    display: inline-block;
+    width: 75%;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    height: 60%;
+    font-size: .7rem;
+    padding: 6px 14px;
+    border: 1px solid #f22;
+    border-radius: 15px;
+    color: #f22;
+    transition: .5s;
+}
+main .layout .left .top-ads .list ul li a:hover{
+    background-color: #f22;
+    color: #fff;
+}
+main .layout .left .top-ads .caption{
+    text-align: left;
+    margin-top: 20px;
+}
+main .layout .left .bottom-ads .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+main .layout .left .bottom-ads .wrapper .item{
+    width: 45%;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+main .layout .left .bottom-ads .wrapper .item .info{
+    width: 70%;
+}
+main .layout .left .bottom-ads .wrapper .item .info .empty{
+    height: 30%;
+}
+main .layout .left .bottom-ads .wrapper .item .image{
+    width: 30%;
+}
+main  .layout .left .bottom-ads .wrapper .item .image img{
+    width: 100%;
+    height: 100%;
+}
